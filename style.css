@@ -1,0 +1,165 @@
+html{
+    background-color: #000000;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+body{
+    margin: 0;
+}
+div nav{
+    position: static;
+}
+nav{
+    background-color: #777 ;
+    border: 3px solid gray;
+    padding: 1rem 1rem 1rem 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+#home{
+    font-weight: 900;
+    text-align: left;
+    text-shadow: .1rem .2rem .3rem #ff9f03;
+    background-color: #555;
+    color: #111111;
+    padding: .5rem .5rem .5rem 0;
+    display: inline;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-inline: .5;
+    box-shadow: .35rem .35rem .3rem;
+}
+#home:hover{
+    transition: 0.5s ease;
+    box-shadow: .35rem .35rem .3rem #333;
+
+}
+nav a{
+    font-size:20px;
+    text-shadow: .1rem .2rem .3rem #ff9f03;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    
+    
+}
+nav a:hover{
+    text-shadow: .1rem .2rem .3rem#333;
+    transition: 0.5s ease;
+}
+
+
+
+.lista{
+    float: left;
+    position: absolute;
+    color: #333;
+    font-size: 20px;
+    text-shadow:  0.15rem 0.15rem 0.15rem grey;
+    background-color: #ccc;
+    border: outset 3px grey;
+    width: 200px;
+    box-shadow: .5rem .5rem .5rem grey;
+    
+}
+.juegos{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.juegos li:hover{
+    transition: 0.5s ease;
+    color: goldenrod;
+    cursor:pointer;
+}
+.lista p{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.canales{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.canales li:hover{
+    transition: 0.5s ease;
+    color:  #fa3333;
+    cursor:pointer;
+}
+
+.tabla p{
+    color : #fff;
+    text-align: center;
+    text-shadow: .1rem .1rem .5rem #d04d10;
+    font-size: 30px;
+}
+.games{
+    margin: 0 auto;
+    font-size: 20px;
+    border: 5px solid #f3d40760;
+    width: 300px;
+    height: 100px;
+    border-collapse: separate;
+    border-radius: 5px;
+    box-shadow: .5rem .5rem .8rem #d04d10;
+    
+}
+
+.titulo{
+    border:solid black;
+    background-color: #666;
+
+}
+table th{
+    color: #d6660b;
+    background-color: #000000;
+    background-size: auto;
+    border: 5px solid black;
+    inline-size: 5px;
+    
+
+}
+td img{
+    width: 180px;
+    height: 267px;
+    object-fit: contain;
+}
+th,td{
+    border: solid black 5px;
+    border-collapse: collapse;
+}
+.score{
+    color: white;
+    text-shadow:.15rem .15rem .15rem #0f0;
+}
+.name th{
+    text-decoration: underline;
+    text-shadow:  0.1rem 0.1rem 0.1rem rgba(209, 32, 8, 0.701);
+}
+.name th:hover{
+    color: #ffff00;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+footer{
+    
+    background-color: #111d35;
+    padding:1rem;
+    margin-top: 20px;
+}
+footer p{
+    color: wheat;
+    display:inline;
+    
+}
+footer a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #ff7701;
+}
+footer a:hover{
+    color: #00dddd;
+}
