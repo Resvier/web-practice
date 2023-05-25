@@ -1,18 +1,16 @@
 html{
     background-color: #000000;
     font-family: 'Kanit', sans-serif;
-    color: white;
+    
 }
 body{
     margin: 0;
 }
-div nav{
-    position: static;
-}
+
 nav{
     background-color: #777 ;
     border: 3px solid gray;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem ;
     margin-bottom: 20px;
     border-radius: 5px;
     
@@ -50,7 +48,10 @@ nav a:hover{
     transition: 0.5s ease;
 }
 
-
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 .lista{
     float: left;
@@ -69,7 +70,7 @@ nav a:hover{
     margin-bottom: 10px;
 }
 .juegos li:hover{
-    transition: 0.5s ease;
+    transition: 0.4s ease;
     color: goldenrod;
     cursor:pointer;
 }
@@ -105,6 +106,16 @@ nav a:hover{
     box-shadow: .5rem .5rem .8rem #d04d10;
     
 }
+.name th{
+    height: 35px;
+    text-shadow:  0.1rem 0.1rem 0.1rem rgba(209, 32, 8, 0.701);
+}
+.name th:hover{
+    font-size: 22px;
+    color: #ffff00;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
 
 .titulo{
     border:solid black;
@@ -120,35 +131,74 @@ table th{
     
 
 }
-td img{
+.tabla td img{
     width: 180px;
     height: 267px;
     object-fit: contain;
 }
-th,td{
-    border: solid black 5px;
-    border-collapse: collapse;
-}
+
 .score{
     color: white;
     text-shadow:.15rem .15rem .15rem #0f0;
 }
-.name th{
-    text-decoration: underline;
-    text-shadow:  0.1rem 0.1rem 0.1rem rgba(209, 32, 8, 0.701);
+
+.descripcion-juegos p{
+    font-size: 25px;
+    margin:30px auto;
+    color: #888888;
+    height: 80px;
+    width: 1000px;
 }
-.name th:hover{
-    color: #ffff00;
-    cursor: pointer;
-    transition: 0.3s ease;
+.linea{
+    border-bottom: 1px solid #fff;
 }
 
+.chanels p{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: .1rem .1rem .5rem #d04d10;
+    margin-top: 100px;
+}
+.info{
+    
+    margin: 0 auto;
+    border: 5px solid #ff000092;
+    border-radius: 10px;
+    box-shadow: .4rem .4rem .3rem #ff000092;
+}
+.info a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #e66657;
+}
+.nombre td{
+    height: 35px;
+}
+.nombre {
+    text-align: center;
+    border: 5px solid #ff000092;
+    border-radius: 10px;
+}
+.nombre a:hover {
+    cursor: pointer;
+    transition: 0.7s ease;
+    font-size: 22px;
+    color: #ff0000
+}
+.descripcion-canales p{
+    font-size: 25px;
+    margin:30px auto;
+    color: #888888;
+    height: 100px;
+    width: 1000px;
+}
 
 footer{
-    
+    position: relative;
     background-color: #111d35;
-    padding:1rem;
-    margin-top: 20px;
+    padding:1.5rem;
+    margin-top: 120px;
 }
 footer p{
     color: wheat;
@@ -156,10 +206,12 @@ footer p{
     
 }
 footer a{
+    text-align: end;
     text-decoration: none;
     margin-left: 30px;
     color: #ff7701;
 }
 footer a:hover{
-    color: #00dddd;
+    text-decoration:underline;
 }
+
