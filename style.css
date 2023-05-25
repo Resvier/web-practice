@@ -1,38 +1,75 @@
 html{
     background-color: #000000;
     font-family: 'Kanit', sans-serif;
+    color: white;
 }
-#home{
-    text-align: center;
-    text-shadow: 0.15rem 0.15rem 0.15rem rgb(0, 38, 255);
-    color: #d6660b;
-    margin: auto;
-    padding: 1rem 1rem;
+body{
+    margin: 0;
+}
+div nav{
+    position: static;
+}
+nav{
+    background-color: #777 ;
+    border: 3px solid gray;
+    padding: 1rem 1rem 1rem 0;
+    margin-bottom: 20px;
     border-radius: 5px;
-    border: 7px ridge orangered;
+    
 }
-h2{
-    margin-left: 100px;
-    color:wheat;
+
+#home{
+    font-weight: 900;
+    text-align: left;
+    text-shadow: .1rem .2rem .3rem #ff9f03;
+    background-color: #555;
+    color: #111111;
+    padding: .5rem .5rem .5rem 0;
+    display: inline;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-inline: .5;
+    box-shadow: .35rem .35rem .3rem;
 }
-article p{
-    color:white;
+#home:hover{
+    transition: 0.5s ease;
+    box-shadow: .35rem .35rem .3rem #333;
+
 }
+nav a{
+    font-size:20px;
+    text-shadow: .1rem .2rem .3rem #ff9f03;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    
+    
+}
+nav a:hover{
+    text-shadow: .1rem .2rem .3rem#333;
+    transition: 0.5s ease;
+}
+
+
 
 .lista{
     float: left;
+    position: absolute;
+    color: #333;
     font-size: 20px;
     text-shadow:  0.15rem 0.15rem 0.15rem grey;
-    background-color: #fff;
+    background-color: #ccc;
     border: outset 3px grey;
     width: 200px;
-    height: 331px;
+    box-shadow: .5rem .5rem .5rem grey;
+    
 }
-.lista li{
-    transition: 0.3s ease;
-    list-style: square;
+.juegos{
+    list-style: none;
+    margin-bottom: 10px;
 }
-.lista li:hover{
+.juegos li:hover{
+    transition: 0.5s ease;
     color: goldenrod;
     cursor:pointer;
 }
@@ -40,23 +77,33 @@ article p{
     text-decoration: underline;
     margin-left: 10px;
 }
-.games caption{
+
+.canales{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.canales li:hover{
+    transition: 0.5s ease;
+    color:  #fa3333;
+    cursor:pointer;
+}
+
+.tabla p{
+    color : #fff;
+    text-align: center;
+    text-shadow: .1rem .1rem .5rem #d04d10;
     font-size: 30px;
-    color: wheat;
-    margin: 10px 10px;
 }
 .games{
     margin: 0 auto;
     font-size: 20px;
-    border: solid 5px #fff;
+    border: 5px solid #f3d40760;
     width: 300px;
     height: 100px;
     border-collapse: separate;
     border-radius: 5px;
+    box-shadow: .5rem .5rem .8rem #d04d10;
     
-}
-div table{
-    transition: box-shadow 0.3s ease;
 }
 
 .titulo{
@@ -76,6 +123,7 @@ table th{
 td img{
     width: 180px;
     height: 267px;
+    object-fit: contain;
 }
 th,td{
     border: solid black 5px;
@@ -83,28 +131,35 @@ th,td{
 }
 .score{
     color: white;
-    text-shadow:  0.15rem 0.15rem 0.15rem #05db05;
+    text-shadow:.15rem .15rem .15rem #0f0;
 }
 .name th{
-    transition: 0.5s ease;
     text-decoration: underline;
     text-shadow:  0.1rem 0.1rem 0.1rem rgba(209, 32, 8, 0.701);
 }
 .name th:hover{
     color: #ffff00;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 
 footer{
-    border-top: #000000;
+    
     background-color: #111d35;
     padding:1rem;
+    margin-top: 20px;
 }
 footer p{
     color: wheat;
+    display:inline;
+    
 }
 footer a{
-    float: right;
-    color: greenyellow;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #ff7701;
+}
+footer a:hover{
+    color: #00dddd;
 }
